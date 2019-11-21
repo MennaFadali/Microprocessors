@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/sendrec.dir/sendrec.c.o  -o sendrec -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so 

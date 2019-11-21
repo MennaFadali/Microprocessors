@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/m2.dir/sendrec.c.o  -o m2 -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so 
