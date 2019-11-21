@@ -33,19 +33,24 @@ void mergeSort(int l, int r) {
 }
 
 int main(int argc, char **argv) {
-    FILE * pFile;
-    int n ;
-    pFile = fopen("test4.txt","r");
-    fscanf(pFile,"%d",&n);
-    for (int i = 0 ; i< n; i++)
-        fscanf(pFile,"%d",&a[i]);
     MPI_Init(&argc, &argv);
     int l, r;
+    int n;
     int rank;
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     int world_size;
     MPI_Comm_size(MPI_COMM_WORLD, &world_size);
     int parent = ((rank + 1) / 2) - 1;
+    if (rank == 0) {
+        FILE *pFile;
+        pFile = fopen("test1.txt", "r");
+        fscanf(pFile, "%d", &n);
+        for (int i = 0; i < n; i++)
+            fscanf(pFile, "%d", &a[i]);
+    }
+    MPI_Bcast(&n, 1, MPI_INT, 0, MPI_COMM_WORLD);
+    for (int i = 0; i < n; i++)
+        MPI_Bcast(&a[i], 1, MPI_INT, 0, MPI_COMM_WORLD);
     if (rank % 2 != 0 && rank + 1 >= world_size) {
         MPI_Finalize();
         return 0;
@@ -57,6 +62,7 @@ int main(int argc, char **argv) {
         MPI_Recv(&l, 1, MPI_INT, parent, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
         MPI_Recv(&r, 1, MPI_INT, parent, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
     }
+
     if (l == r || (2 * rank + 2 >= world_size)) {
         mergeSort(l, r);
     } else {
@@ -66,6 +72,7 @@ int main(int argc, char **argv) {
         MPI_Send(&mid, 1, MPI_INT, left, 0, MPI_COMM_WORLD);
         MPI_Send(&mid2, 1, MPI_INT, right, 0, MPI_COMM_WORLD);
         MPI_Send(&r, 1, MPI_INT, right, 0, MPI_COMM_WORLD);
+
         int n1 = mid - l + 1, n2 = r - mid2 + 1;
         int b[n1], c[n2];
         for (int i = 0; i < n1; i++)
