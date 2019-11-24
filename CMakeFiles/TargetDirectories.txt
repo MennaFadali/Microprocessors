@@ -1,4 +1,5 @@
 /home/mennafadali/CLionProjects/Microprocessors/CMakeFiles/rebuild_cache.dir
+/home/mennafadali/CLionProjects/Microprocessors/CMakeFiles/sg.dir
 /home/mennafadali/CLionProjects/Microprocessors/CMakeFiles/edit_cache.dir
 /home/mennafadali/CLionProjects/Microprocessors/CMakeFiles/sendrec.dir
 /home/mennafadali/CLionProjects/Microprocessors/CMakeFiles/bcast.dir

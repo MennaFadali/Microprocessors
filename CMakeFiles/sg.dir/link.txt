@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/sg.dir/scattergather.c.o  -o sg -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so 

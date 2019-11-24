@@ -1,4 +1,6 @@
 /home/mennafadali/CLionProjects/Microprocessors/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/mennafadali/CLionProjects/Microprocessors/cmake-build-debug/CMakeFiles/sg.dir
 /home/mennafadali/CLionProjects/Microprocessors/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/mennafadali/CLionProjects/Microprocessors/cmake-build-debug/CMakeFiles/demo.dir
+/home/mennafadali/CLionProjects/Microprocessors/cmake-build-debug/CMakeFiles/sendrec.dir
+/home/mennafadali/CLionProjects/Microprocessors/cmake-build-debug/CMakeFiles/bcast.dir
 /home/mennafadali/CLionProjects/Microprocessors/cmake-build-debug/CMakeFiles/serial.dir

@@ -60,6 +60,43 @@ CMAKE_SOURCE_DIR = /home/mennafadali/CLionProjects/Microprocessors
 CMAKE_BINARY_DIR = /home/mennafadali/CLionProjects/Microprocessors
 
 #=============================================================================
+# Target rules for target CMakeFiles/sg.dir
+
+# All Build rule for target.
+CMakeFiles/sg.dir/all:
+	$(MAKE) -f CMakeFiles/sg.dir/build.make CMakeFiles/sg.dir/depend
+	$(MAKE) -f CMakeFiles/sg.dir/build.make CMakeFiles/sg.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mennafadali/CLionProjects/Microprocessors/CMakeFiles --progress-num=7,8 "Built target sg"
+.PHONY : CMakeFiles/sg.dir/all
+
+# Include target in all.
+all: CMakeFiles/sg.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/sg.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mennafadali/CLionProjects/Microprocessors/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sg.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mennafadali/CLionProjects/Microprocessors/CMakeFiles 0
+.PHONY : CMakeFiles/sg.dir/rule
+
+# Convenience name for target.
+sg: CMakeFiles/sg.dir/rule
+
+.PHONY : sg
+
+# clean rule for target.
+CMakeFiles/sg.dir/clean:
+	$(MAKE) -f CMakeFiles/sg.dir/build.make CMakeFiles/sg.dir/clean
+.PHONY : CMakeFiles/sg.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/sg.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/sendrec.dir
 
 # All Build rule for target.

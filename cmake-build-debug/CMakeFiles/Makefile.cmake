@@ -46,6 +46,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/demo.dir/DependInfo.cmake"
+  "CMakeFiles/sg.dir/DependInfo.cmake"
+  "CMakeFiles/sendrec.dir/DependInfo.cmake"
+  "CMakeFiles/bcast.dir/DependInfo.cmake"
   "CMakeFiles/serial.dir/DependInfo.cmake"
   )
